@@ -3,7 +3,7 @@
     function Start() {
         console.log("App Started!");
         console.info("---------------");
-        console.warn("This is an error!");
+
 
     }
 

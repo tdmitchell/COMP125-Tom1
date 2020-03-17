@@ -1,9 +1,15 @@
 ﻿// IIFE - Immediatly Invoke Function Expression
+// anonymous self executing function
 (function () {
-    function Start() {
-        console.log("App Started!");
-        console.info("---------------");
 
+    function Start() {
+        //local variable
+        var title = document.title;
+
+
+        console.log("App Started!");
+        console.log("---------------");
+        console.log("Title: " + title);
 
     }
 

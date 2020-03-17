@@ -3,15 +3,19 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>COMP125 - Welcome!</title>
     <!-- CSS Section -->
-    <link href="./Content/app.css" rel="stylesheet" />
+    <link rel="stylesheet" href="./Scripts/lib/bootstrap/css/bootstrap.min.css" />      <!-- ALWAYS BEFORE MY CSS -->
+    <link rel="stylesheet" href="./Content/app.css" />                                  <!-- MY CSS ALWAYS THE LAST -->
 </head>
 <body>
     <h1>Welcome to Javascript!</h1>
 
     <!-- Javascript Section -->
-    <script src="./Scripts/app.js"></script>
+    <script src="Scripts/lib/jquery/jquery-3.4.1.min.js"></script>      <!-- ALWAYS BEFORE BOOTSTRAP -->
+    <script src="./Scripts/lib/bootstrap/js/bootstrap.min.js"></script> <!-- ALWAYS BEFORE MY JAVASCRIPT -->
+    <script src="./Scripts/app.js"></script>                            <!-- MY JAVASCRIPT ALWAYS THE LAST -->
 
 </body>
 </html>

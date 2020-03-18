@@ -3,9 +3,26 @@
 (function () {
 
     function Start() {
-        //local variable
-        var title = document.title;
+        "use strict"
 
+        //local variable
+        let title = document.title;
+       
+
+        switch (title) {
+            case "COMP125 - Home":
+                let AboutButton = document.getElementById("AboutButton");
+                AboutButton.addEventListener("click", function () {
+                    console.log("Button was clicked");
+                });
+                break;
+            case "COMP125 - About":
+                break;
+        }
+
+
+
+        
 
         console.log("App Started!");
         console.log("---------------");
